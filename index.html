@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drawing Board</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBHpqto6gSI5RlvufwrDPtIP8Q70bal7ks",
+    authDomain: "canvas-painting-9ff44.firebaseapp.com",
+    databaseURL: "https://canvas-painting-9ff44.firebaseio.com",
+    projectId: "canvas-painting-9ff44",
+    storageBucket: "canvas-painting-9ff44.appspot.com",
+    messagingSenderId: "595057974327",
+    appId: "1:595057974327:web:98672229421296d3ba33b2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <button type="button" id = "time"
+  onclick="document.getElementById('demo').innerHTML = Date()">
+  Click me to display present Date and Time on the top </button>
+  
+  <p id="demo"></p>
+        <div id ="canvascontainer"></div>
+        <script src="sketch.js"></script>
+        <h3><i id = "text1" style="color:gray;"> Select the below options to draw on the canvas or to view others drawing</i></h3>
+        <h4><i id = "text2" style="color:gray;"> Background Colour</i></h4>
+        <h4><i id = "text3" style="color:gray;"> Stroke Colour</i></h4>
+        <h4><i id = "text4" style="color:gray;"> Fill Colour</i></h4>
+        <h4><i id = "text5" style="color:black;"> Note:</i></h4>
+        <h4><i id = "text6" style="color:gray;"> You can view others drawings in any colour you wish</i></h4>
+        <h1> <i id = "text" style="color:gray;" >Sketch-Up & Post</i></h1>
+        <p>
+            <button id = "saveButton" style="color:aqua;">Publish Design</button>
+            <button id = "clearButton" style="color:sandybrown;">Clear Design</button>
+            <button id = "yellowButton" style="color:yellowgreen;">Yellow</button>
+            <button id = "redButton" style="color:red;">Red</button>
+            <button id = "greenButton" style="color:green;">Green</button>
+            <button id = "blueButton" style="color:blue;">Blue</button>
+            <button id = "purpleButton" style="color:purple;">purple</button>
+            <button id = "violetButton" style="color:violet;">violet</button>
+            <button id = "whiteButton" style="color:wheat;">White</button>
+            <button id = "blackButton" style="color:black;">Black</button>
+            <button id = "orangeButton" style="color:orangered;">Orange</button>
+
+            <button id = "fillYellowButton"  style="color:yellowgreen;">Yellow</button>
+            <button id = "fillRedButton"  style="color:red;">Red</button>
+            <button id = "fillWhiteButton"  style="color:wheat;">White</button>
+            <button id = "fillBlueButton"  style="color:blue;">Blue</button>
+            <button id = "fillGreenButton"  style="color:green;">Green</button>
+            <button id = "fillVioletButton"  style="color:violet;">Violet</button>
+            <button id = "fillPurpleButton"  style="color:purple;">Purple</button>
+            <button id = "fillOrangeButton"  style="color:orangered;">Orange</button>
+
+            <button id = "canvasWhiteButton">White</button>
+            <button id = "canvasBlackButton">Black</button>
+            <button id = "canvasOrangeButton">Orange</button>
+            <button id = "canvasYellowButton">Yellow</button>
+            <button id = "canvasRedButton">Red</button>
+            <button id = "canvasGreenButton">Green</button>
+        </p>
+
+        <p>
+            <ol id = "drawinglist">
+
+            </ol>
+  
+</body>
+
+</html>
