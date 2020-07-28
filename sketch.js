@@ -36,7 +36,7 @@ function setup() {
   text6.position(windowWidth+30,windowHeight-300);
 
   var timeButton = select('#time');
-  timeButton.position(displayWidth-150,displayHeight-130);
+  timeButton.position(windowWidth-150,windowHeight-130);
 
   var saveButton = select('#saveButton');
   saveButton.mousePressed(saveDrawing);
@@ -45,98 +45,98 @@ function setup() {
   clearButton.mousePressed(clearDrawing);
 
   var yellowButton = select('#yellowButton');
-  yellowButton.position(displayWidth-150,375);
+  yellowButton.position(windowWidth-150,375);
   yellowButton.mousePressed(yellowColor);
 
   var redButton = select('#redButton');
-  redButton.position(displayWidth-150,400);
+  redButton.position(windowWidth-150,400);
   redButton.mousePressed(redColor);
 
   var greenButton = select('#greenButton');
-  greenButton.position(displayWidth-150,425);
+  greenButton.position(windowWidth-150,425);
   greenButton.mousePressed(greenColor);
 
   var blueButton = select('#blueButton');
-  blueButton.position(displayWidth-150,450);
+  blueButton.position(windowWidth-150,450);
   blueButton.mousePressed(blueColor);
  
   var purpleButton = select('#purpleButton');
-  purpleButton.position(displayWidth-150,475);
+  purpleButton.position(windowWidth-150,475);
   purpleButton.mousePressed(purpleColor);
 
   var violetButton = select('#violetButton');
-  violetButton.position(displayWidth-150,500);
+  violetButton.position(windowWidth-150,500);
   violetButton.mousePressed(violetColor);
 
   var WhiteButton = select('#whiteButton');
-  WhiteButton.position(displayWidth-150,525);
+  WhiteButton.position(windowWidth-150,525);
   WhiteButton.mousePressed(whiteColor);
 
   var BlackButton = select('#blackButton');
-  BlackButton.position(displayWidth-150,550);
+  BlackButton.position(windowWidth-150,550);
   BlackButton.mousePressed(blackColor);
 
   
   var OrangeButton = select('#orangeButton');
-  OrangeButton.position(displayWidth-150,575);
+  OrangeButton.position(windowWidth-150,575);
   OrangeButton.mousePressed(orangeColor);
 
   //set canvas color
   var canvasWhiteButton = select('#canvasWhiteButton');
-  canvasWhiteButton.position(displayWidth-150,150);
+  canvasWhiteButton.position(windowWidth-150,150);
   canvasWhiteButton.mousePressed(whiteButton);
 
   var canvasBlackButton = select('#canvasBlackButton');
-  canvasBlackButton.position(displayWidth-150,175);
+  canvasBlackButton.position(windowWidth-150,175);
   canvasBlackButton.mousePressed(blackButton);
 
   var canvasOrangeButton = select('#canvasOrangeButton');
-  canvasOrangeButton.position(displayWidth-150,200);
+  canvasOrangeButton.position(windowWidth-150,200);
   canvasOrangeButton.mousePressed(orangeButton);
 
   var canvasYellowButton = select('#canvasYellowButton');
-  canvasYellowButton.position(displayWidth-150,225);
+  canvasYellowButton.position(windowWidth-150,225);
   canvasYellowButton.mousePressed(YellowButton);
 
   var canvasRedButton = select('#canvasRedButton');
-  canvasRedButton.position(displayWidth-150,250);
+  canvasRedButton.position(windowWidth-150,250);
   canvasRedButton.mousePressed(RedButton);
 
   var canvasGreenButton = select('#canvasGreenButton');
-  canvasGreenButton.position(displayWidth-150,275);
+  canvasGreenButton.position(windowWidth-150,275);
   canvasGreenButton.mousePressed(GreenButton);
 
   //set fill
   var fillYellowButton = select('#fillYellowButton');
-  fillYellowButton.position(displayWidth-10,200);
+  fillYellowButton.position(windowWidth-10,200);
   fillYellowButton.mousePressed(fillYellowColor);
 
   var fillRedButton = select('#fillRedButton');
-  fillRedButton.position(displayWidth-10,225);
+  fillRedButton.position(windowWidth-10,225);
   fillRedButton.mousePressed(fillRedColor);
 
   var fillWhiteButton = select('#fillWhiteButton');
-  fillWhiteButton.position(displayWidth-10,250);
+  fillWhiteButton.position(windowWidth-10,250);
   fillWhiteButton.mousePressed(fillWhiteColor);
 
   var fillBlueButton = select('#fillBlueButton');
-  fillBlueButton.position(displayWidth-10,275);
+  fillBlueButton.position(windowWidth-10,275);
   fillBlueButton.mousePressed(fillBlueColor);
 
   var fillGreenButton = select('#fillGreenButton');
-  fillGreenButton.position(displayWidth-10,300);
+  fillGreenButton.position(windowWidth-10,300);
   fillGreenButton.mousePressed(fillGreenColor);
 
   var fillVioletButton = select('#fillVioletButton');
-  fillVioletButton.position(displayWidth-10,325);
+  fillVioletButton.position(windowWidth-10,325);
   fillVioletButton.mousePressed(fillVioletColor);
 
   var fillPurpleButton = select('#fillPurpleButton');
-  fillPurpleButton.position(displayWidth-10,350);
+  fillPurpleButton.position(windowWidth-10,350);
   fillPurpleButton.mousePressed(fillPurpleColor);
 
   var fillOrangeButton = select('#fillOrangeButton');
-  fillOrangeButton.position(displayWidth-10,375);
+  fillOrangeButton.position(windowWidth-10,375);
   fillOrangeButton.mousePressed(fillOrangeColor);
 
 
